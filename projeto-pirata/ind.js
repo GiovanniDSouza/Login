@@ -10,7 +10,13 @@ function logar(){
         location.href = "piraflexIn.html"; // location.href ele vai carrega o arquivo que estiver ai dentro
     } else{
         alert('Usuario ou senha não encontrados');
-        
+        document.getElementById('login_field').style.background = 'rgb(255 0 0 / 39%)';
+        document.getElementById('input').style.color = 'white';
+
+        document.getElementById('password').style.background = 'rgb(255 0 0 / 39%)';
+        document.getElementById('inputt').style.color = 'white';
+        document.getElementById('on').style.color = 'white';
+        document.getElementById('of').style.color = 'white';
     }
 }
 

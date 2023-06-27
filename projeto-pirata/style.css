@@ -128,7 +128,7 @@ display: none;
   height: 48px;
   width: 100%;
   font-weight: 500;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 14px;
   line-height: 22px;
   letter-spacing: 0.5px;
@@ -182,7 +182,6 @@ display: none;
 
 #on{
     position: absolute;
-    color: #FFFCF3;
     right: 15px;
     font-size: 22px;
     margin-top: 15px;
@@ -190,7 +189,6 @@ display: none;
   }
   #of{
     position: absolute;
-    color: #FFFCF3;
     right: 15px;
     font-size: 22px;
     margin-top: 15px;
@@ -207,7 +205,7 @@ display: none;
   .face-container {
     max-width: 200px;
    float: right;
-    margin-top: -170px;
+    margin-top: -150px;
     transform: rotate(-5deg);
     transform-origin: 0 100%;
     animation: nod 5s linear infinite, slidein 29s linear infinite;
@@ -245,3 +243,18 @@ display: none;
     animation-delay: 30s;
     visibility: hidden;
   }
+
+  @media (max-width: 800px) {
+    #going {
+      max-width: 140px;
+      margin-top: 80px;
+    }
+}
+@media (max-width: 800px) {
+  #sunny {
+   margin-top: -110px;
+    max-width: 140px;
+    animation: nod 5s linear infinite, slidein 35s linear infinite;
+    animation-delay: 20s;
+  }
+}
