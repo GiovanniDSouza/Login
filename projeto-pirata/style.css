@@ -258,3 +258,23 @@ display: none;
     animation-delay: 20s;
   }
 }
+#msgError{
+  text-align: center;
+  color: #ffffffbd;
+  background-color: #ff0000;
+  padding: 30px;
+  border-radius: 4px;
+  position: absolute;
+  top: -310px;
+  display: none;
+ margin: 60px;
+}
+h7{
+  animation: anima 1s linear infinite;
+ 
+}
+@keyframes anima {
+  0% { opacity: 0; }
+     50% { opacity: 0.8; }
+     100% { opacity: 1; }
+}
