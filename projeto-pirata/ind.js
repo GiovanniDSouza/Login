@@ -29,6 +29,18 @@ function mostrarSenha(){
     }
 }
 
+function but(){
+    document.getElementById('login_field').style.borderBottom = 'none';
+    document.getElementById('input').style.color = '#ffeba7';
+
+    document.getElementById('msgError').style.display = 'none';
+
+    document.getElementById('password').style.borderBottom = 'none';
+    document.getElementById('inputt').style.color = '#ffeba7';
+    document.getElementById('on').style.color = '#ffeba7';
+    document.getElementById('of').style.color = '#ffeba7';
+}
+
 function ocultarSenha(){
     var de = document.getElementById('password');
     if(de.type == "text"){

@@ -92,13 +92,17 @@ display: none;
   transform-style: preserve-3d;
   transition: all 600ms ease-out; 
 }
+.pb-3, .py-3{
+  padding-bottom: 0rem !important;
+}
 .card-front, .card-back {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   background-color: #2b2e38;
   position: absolute;
   border-radius: 6px;
   -webkit-transform-style: preserve-3d;
+
 }
 .card-back {
   transform: rotateY(180deg);
@@ -247,12 +251,12 @@ display: none;
   @media (max-width: 800px) {
     #going {
       max-width: 140px;
-      margin-top: 80px;
+      margin-top: 70px;
     }
 }
 @media (max-width: 800px) {
   #sunny {
-   margin-top: -110px;
+   margin-top: -135px;
     max-width: 140px;
     animation: nod 5s linear infinite, slidein 35s linear infinite;
     animation-delay: 20s;
@@ -260,14 +264,31 @@ display: none;
 }
 #msgError{
   text-align: center;
-  color: #ffffffbd;
-  background-color: #ff0000;
-  padding: 30px;
+  color: red;
+  background-color: #2b2e38;
+  padding: 35px;
   border-radius: 4px;
   position: absolute;
   top: -310px;
   display: none;
  margin: 60px;
+}
+#msgOk{
+  position: absolute;
+  margin-top: 29px;
+  float: right;
+  border: none;
+  margin-left: -17px;
+  border-radius: 5px;
+  width: 35px;
+  color: red;
+  font-size: 12px;
+}
+#msgOk:hover,
+#msgOk:focus{
+  background-color: red;
+  color: white;
+
 }
 h7{
   animation: anima 1s linear infinite;
