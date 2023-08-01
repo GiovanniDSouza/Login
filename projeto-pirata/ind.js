@@ -1,11 +1,14 @@
-const submitBtnn = document.querySelector('.btn');
+const submitBtnn = document.querySelector ('.btn');
 
 function logar(){
     var login = document.getElementById('login_field').value;
     var senha = document.getElementById('password').value;
+     
 
+   
+    document.getElementById('login_field').value = '';
     //aqui estou passando o nome é a senha do usuario se for este ele aceita se não da erro, usuario criado manualmete
-    if( login == "teste" && senha == "projeto"){
+    if( login == "teste" && senha == "teste"){
         console.log('Bem-Vindo');
         location.href = "piraflexIn.html"; // location.href ele vai carrega o arquivo que estiver ai dentro
     } else{
